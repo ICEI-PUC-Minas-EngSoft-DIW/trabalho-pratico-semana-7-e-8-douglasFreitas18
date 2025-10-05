@@ -1,89 +1,63 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Repúblicas Universitárias</title>
-  <!-- Bootstrap CSS via CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Repúblicas Universitárias - BH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1 class="mb-3">Repúblicas Universitárias BH</h1>
+            <nav class="nav">
+                <a class="nav-link text-white" href="#">Início</a>
+                <a class="nav-link text-white" href="#">Repúblicas</a>
+                <a class="nav-link text-white" href="#">Sobre</a>
+                <a class="nav-link text-white" href="#">Contato</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Cabeçalho -->
-  <header class="bg-dark text-white p-3">
-    <div class="container">
-      <h1 class="mb-3">Repúblicas Universitárias</h1>
-      <nav class="nav">
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Repúblicas</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link text-white" href="#">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <main class="container my-4">
+        <h2 class="mb-4">Repúblicas em destaque</h2>
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-md-4">
+                <div class="card p-3 search-card">
+                    <h2 class="h5 mb-3">Buscar Repúblicas</h2>
+                    <form id="filtro-form">
+                        <div class="mb-3">
+                            <label for="cidade" class="form-label">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" class="form-control" placeholder="ex: Belo Horizonte">
+                        </div>
+                        <div class="mb-3">
+                            <label for="faculdade" class="form-label">Faculdade / Bairro:</label>
+                            <input type="text" id="faculdade" name="faculdade" class="form-control" placeholder="ex: UFMG / Pampulha">
+                        </div>
+                        <div class="mb-3">
+                            <label for="preco" class="form-label">Preço máximo (R$):</label>
+                            <input type="number" id="preco" name="preco" class="form-control" placeholder="ex: 800">
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Pesquisar</button>
+                    </form>
+                </div>
+        </div>
 
-  <!-- Conteúdo principal -->
-  <main class="container my-4">
-    <div class="row g-4">
-      
-      <!-- Formulário -->
-      <section class="col-12 col-md-4">
-        <div class="card p-3">
-          <h2 class="h4 mb-3">Buscar Repúblicas</h2>
-          <form>
-            <div class="mb-3">
-              <label for="cidade" class="form-label">Cidade:</label>
-              <input type="text" id="cidade" name="cidade" class="form-control" required>
-            </div>
-            <div class="mb-3">
-              <label for="faculdade" class="form-label">Faculdade:</label>
-              <input type="text" id="faculdade" name="faculdade" class="form-control" required>
-            </div>
-            <button type="submit" class="btn btn-success w-100">Pesquisar</button>
-          </form>
-        </div>
-      </section>
+        <!-- Lista de repúblicas -->
+        <div class="col-12 col-md-8">
+            <div class="row g-4" id="lista-republicas">
+            <!-- Cards inseridos via JS -->
+            </div>
+        </div>
+    </main>
 
-      <!-- Lista de repúblicas -->
-      <section class="col-12 col-md-8">
-        <h2 class="h4 mb-3">Repúblicas em destaque</h2>
-        <div class="row g-4">
-          <article class="col-12 col-lg-6">
-            <div class="card">
-              <img src="https://picsum.photos/id/1018/600/400" class="card-img-top" alt="República Alpha">
-              <div class="card-body">
-                <h3 class="h5">República Estudantil Alpha</h3>
-                <p><strong>Preço:</strong> R$ 600/mês</p>
-                <p>Localizada próxima à Universidade Federal, conta com quartos individuais e sala de estudo.</p>
-              </div>
-            </div>
-          </article>
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 - Projeto DIW | Belo Horizonte - MG</p>
+  </footer>
 
-          <article class="col-12 col-lg-6">
-            <div class="card">
-              <img src="https://picsum.photos/id/1025/600/400" class="card-img-top" alt="República Beta">
-              <div class="card-body">
-                <h3 class="h5">República Beta</h3>
-                <p><strong>Preço:</strong> R$ 500/mês</p>
-                <p>Ambiente descontraído, ideal para estudantes que buscam convivência em grupo e eventos culturais.</p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- Rodapé -->
-  <footer class="bg-dark text-white text-center p-3">
-    <p class="mb-0">&copy; 2025 - Projeto DIW | Desenvolvido para estudantes universitários</p>
-  </footer>
-
-  <!-- Bootstrap JS via CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,11 +1,53 @@
-/* Ajustes extras */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
-}
+} 
 
+.card-img-top {
+  width: 100%;
+  height: 200px;  
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+  
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+  
 header h1 {
   font-size: 1.8rem;
+}
+  
+footer {
+  font-size: 0.9rem;
+}
+  
+/* Faz a seção de busca acompanhar o scroll */
+.search-card {
+  position: sticky;
+}
+  
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+  
+/* Layout responsivo agradável */
+.card.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+  
+.card-body {
+  flex: 1;
+}
+  
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
 }
 
 footer {
