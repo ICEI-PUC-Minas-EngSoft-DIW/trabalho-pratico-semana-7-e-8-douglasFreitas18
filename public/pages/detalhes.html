@@ -1,61 +1,44 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
-  <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Detalhes da República</title>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="../css/styles.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalhes da República</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
 
-  
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white p-3">
+    <div class="container">
+      <h1 class="mb-3">Detalhes da República</h1>
+      <nav class="nav">
+        <a class="nav-link text-white" href="../index.html">Início</a>
+        <a class="nav-link text-white" href="#">Repúblicas</a>
+        <a class="nav-link text-white" href="#">Sobre</a>
+        <a class="nav-link text-white" href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-  <header class="bg-dark text-white p-3">
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div id="detalhe-republica">
+          <!-- Conteúdo gerado dinamicamente via app.js -->
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <div class="container">
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 - Projeto DIW | Belo Horizonte - MG</p>
+  </footer>
 
-      <h1>Detalhes da República</h1>
-
-    </div>
-
-  </header>
-
-  
-
-  <main class="container my-4">
-
-    <div id="detalhe-republica">
-
-      <!-- Conteúdo gerado dinamicamente -->
-
-    </div>
-
-  </main>
-
-  
-
-  <footer class="bg-dark text-white text-center p-3">
-
-    <p class="mb-0">&copy; 2025 - Projeto DIW | Belo Horizonte - MG</p>
-
-  </footer>
-
-  
-
-  <script src="../app.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="../app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-</html> 
+</html>

@@ -1,64 +1,71 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Repúblicas Universitárias - BH</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Repúblicas Universitárias - BH</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="bg-dark text-white p-3">
-        <div class="container">
-            <h1 class="mb-3">Repúblicas Universitárias BH</h1>
-            <nav class="nav">
-                <a class="nav-link text-white" href="#">Início</a>
-                <a class="nav-link text-white" href="#">Repúblicas</a>
-                <a class="nav-link text-white" href="#">Sobre</a>
-                <a class="nav-link text-white" href="#">Contato</a>
-            </nav>
-        </div>
-    </header>
+  <!-- Cabeçalho -->
+  <header class="bg-dark text-white p-3">
+    <div class="container">
+      <h1 class="mb-3">Repúblicas Universitárias BH</h1>
+      <nav class="nav">
+        <a class="nav-link text-white" href="#">Início</a>
+        <a class="nav-link text-white" href="#">Repúblicas</a>
+        <a class="nav-link text-white" href="#">Sobre</a>
+        <a class="nav-link text-white" href="#">Contato</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container my-4">
-        <h2 class="mb-4">Repúblicas em destaque</h2>
-        <div class="row g-4 align-items-start">
-            <div class="col-12 col-md-4">
-                <div class="card p-3 search-card">
-                    <h2 class="h5 mb-3">Buscar Repúblicas</h2>
-                    <form id="filtro-form">
-                        <div class="mb-3">
-                            <label for="cidade" class="form-label">Cidade:</label>
-                            <input type="text" id="cidade" name="cidade" class="form-control" placeholder="ex: Belo Horizonte">
-                        </div>
-                        <div class="mb-3">
-                            <label for="faculdade" class="form-label">Faculdade / Bairro:</label>
-                            <input type="text" id="faculdade" name="faculdade" class="form-control" placeholder="ex: UFMG / Pampulha">
-                        </div>
-                        <div class="mb-3">
-                            <label for="preco" class="form-label">Preço máximo (R$):</label>
-                            <input type="number" id="preco" name="preco" class="form-control" placeholder="ex: 800">
-                        </div>
-                        <button type="submit" class="btn btn-success w-100">Pesquisar</button>
-                    </form>
-                </div>
+  <!-- Conteúdo principal -->
+  <main class="container my-4">
+    <h2 class="mb-4">Repúblicas em destaque</h2>
+
+    <div class="row g-4 align-items-start">
+      <!-- Coluna da barra lateral de busca -->
+      <div class="col-12 col-md-4">
+        <div class="card p-3 search-card sticky-top" style="top: 100px;">
+          <h2 class="h5 mb-3">Buscar Repúblicas</h2>
+          <form id="filtro-form">
+            <div class="mb-3">
+              <label for="cidade" class="form-label">Cidade:</label>
+              <input type="text" id="cidade" name="cidade" class="form-control" placeholder="ex: Belo Horizonte">
             </div>
-        </div>
+            <div class="mb-3">
+              <label for="faculdade" class="form-label">Faculdade / Bairro:</label>
+              <input type="text" id="faculdade" name="faculdade" class="form-control" placeholder="ex: UFMG / Pampulha">
+            </div>
+            <div class="mb-3">
+              <label for="preco" class="form-label">Preço máximo (R$):</label>
+              <input type="number" id="preco" name="preco" class="form-control" placeholder="ex: 800">
+            </div>
+            <button type="submit" class="btn btn-success w-100">Pesquisar</button>
+          </form>
+        </div>
+      </div>
 
-        <!-- Lista de repúblicas -->
-        <div class="col-12 col-md-8">
-            <div class="row g-4" id="lista-republicas">
-            <!-- Cards inseridos via JS -->
-            </div>
-        </div>
-    </main>
+      <!-- Coluna dos cards -->
+      <div class="col-12 col-md-8">
+        <div class="row g-4" id="lista-republicas">
+          <!-- Cards inseridos via JS -->
+        </div>
+      </div>
+    </div>
+  </main>
 
-  <footer class="bg-dark text-white text-center p-3">
-    <p class="mb-0">&copy; 2025 - Projeto DIW | Belo Horizonte - MG</p>
-  </footer>
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p class="mb-0">&copy; 2025 - Projeto DIW | Belo Horizonte - MG</p>
+  </footer>
 
-  <script src="app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

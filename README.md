@@ -12,32 +12,52 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Douglas Alexandre Marçal de Freitas
+- Matricula: 898839
+- Proposta de projeto escolhida: Repúblicas BH
+- Breve descrição sobre seu projeto: Site para ajudar universitários a encontrar repúblicas na região de BH
 
 ## Print da Home-Page
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print da Home Page](./images/homePage.png)
 
 ## Print da página de detalhes do item
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Print da página de detalhes](./images/detalhesPage.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
 const dados = [
   {
-    "id": 1,
-    "titulo": "Prefeitura Lança Plano de Mobilidade Urbana",
-    "descricao": "Novo plano do transporte público.",
-    "conteudo": "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    "categoria": "Cidades",
-    "autor": "Joana Ribeiro",
-    "data": "2025-03-30",
-    "imagem": "img/mobilidade.jpg"
+    id: 1,
+    nome: "República Horizonte",
+    descricao: "Ambiente tranquilo e organizado, próximo à UFMG.",
+    preco: "R$ 700/mês",
+    localizacao: "Bairro Pampulha, Belo Horizonte - MG",
+    imagem: "https://picsum.photos/id/1018/600/400",
+    detalhes:
+      "A República Horizonte oferece quartos individuais mobiliados, cozinha compartilhada, internet de alta velocidade e área de lazer. Ideal para estudantes da UFMG, com transporte público a 2 minutos de distância."
+  },
+  {
+    id: 2,
+    nome: "República Minas Boa",
+    descricao: "Casa espaçosa com clima familiar e quartos amplos.",
+    preco: "R$ 650/mês",
+    localizacao: "Bairro Santa Efigênia, Belo Horizonte - MG",
+    imagem: "https://picsum.photos/id/1025/600/400",
+    detalhes:
+      "A República Minas Boa possui 5 quartos, 3 banheiros, área externa com churrasqueira e lavanderia. Próxima a bares, supermercados e transporte público."
+  },
+  {
+    id: 3,
+    nome: "República Central BH",
+    descricao: "Localização privilegiada no coração de BH.",
+    preco: "R$ 800/mês",
+    localizacao: "Centro, Belo Horizonte - MG",
+    imagem: "https://picsum.photos/id/1035/600/400",
+    detalhes:
+      "República moderna com quartos individuais, cozinha equipada e áreas de convivência. Próxima a faculdades particulares e pontos de ônibus."
   }
 ]
 ```

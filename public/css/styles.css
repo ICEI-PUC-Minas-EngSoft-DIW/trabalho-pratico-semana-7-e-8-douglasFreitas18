@@ -1,56 +1,52 @@
+/* ======== Estilo global ======== */
 body {
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
-  
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-}
-  
-.card.h-100 {
-    display: flex;
-    flex-direction: column;
-}
-  
+
+/* ======== Cabeçalho ======== */
 header h1 {
-    font-size: 1.8rem;
-}
-  
-footer {
-    font-size: 0.9rem;
-}
-  
-/* Faz a seção de busca acompanhar o scroll */
-.search-card {
-    position: sticky;
+  font-size: 1.8rem;
 }
 
-/* Ajusta imagem dos cards */
-.card-img-top {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px 5px 0 0;
-}
-  
-/* Layout responsivo agradável */
+/* ======== Cartões de repúblicas ======== */
 .card.h-100 {
-    display: flex;
-    flex-direction: column;
-}
-  
-.card-body {
-    flex: 1;
-}
-  
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
+.card-body {
+  flex: 1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+/* ======== Barra de busca lateral ======== */
+.search-card {
+  position: sticky;
+  top: 100px;        /* Fixa a seção abaixo do header */
+  z-index: 100;
+  background: #fff;
+}
+
+/* ======== Rodapé ======== */
 footer {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
+}
+
+/* ======== Ajustes responsivos ======== */
+@media (max-width: 768px) {
+  .search-card {
+    position: static; /* Em telas pequenas, segue o fluxo normal */
+    top: auto;
+    margin-bottom: 1.5rem;
+  }
 }
